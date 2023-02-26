@@ -1,4 +1,3 @@
-// our-domain.com/
 
 import MeetupList from "../../components/meetups/MeetupList";
 
@@ -16,15 +15,13 @@ const Dummy_List = [
     name: "A Second meetup",
     image:
       "https://images.pexels.com/photos/532263/pexels-photo-532263.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      address: "Some Address 4, 213 Some City",
-      description: "this second meetup!",
+    address: "Some Address 4, 213 Some City",
+    description: "this second meetup!",
   },
 ];
 
 function HomePage() {
-  return (
-      <MeetupList meetups={Dummy_List} />
-  );
+  return <MeetupList meetups={Dummy_List} />;
 }
 
 export default HomePage;

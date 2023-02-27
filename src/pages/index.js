@@ -21,7 +21,7 @@ const Dummy_List = [
 ];
 
 function HomePage(props) {
-  return <MeetupList meetups={loadedMeetups} />;
+  return <MeetupList meetups={props.meetups} />;
 }
 
 export async function getStaticProps() {
@@ -29,7 +29,8 @@ export async function getStaticProps() {
   return {
     props: {
       meetups: Dummy_List
-    }
+    },
+    revalidate:10,
   }
 }
 
